@@ -1,0 +1,33 @@
+body{
+	font-size: 14px;
+}
+
+header {
+	background-color: $p-color1;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 1.5em;
+
+		img{
+			height:35px;
+			margin-left: 2%;
+		}
+
+		ul {
+			list-style-type: none;
+
+			a{
+				text-decoration: none;
+				color:$n-color1;
+
+				li{
+					display: inline-block;
+					margin-right:1em;
+				}
+			}
+		}
+	}
+}
