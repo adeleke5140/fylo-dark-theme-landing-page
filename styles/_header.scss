@@ -1,9 +1,11 @@
 body{
 	font-size: 14px;
+	font-family: $font-family2;
 }
 
-header {
+.header {
 	background-color: $p-color1;
+	font-family: $font-family1;
 
 	nav {
 		display: flex;
@@ -12,8 +14,8 @@ header {
 		padding-top: 1.5em;
 
 		img{
-			height:35px;
-			margin-left: 2%;
+			height:30px;
+			margin-left: 5%;
 		}
 
 		ul {
@@ -26,8 +28,98 @@ header {
 				li{
 					display: inline-block;
 					margin-right:1em;
+
+					&:hover{
+						color: $a-color1;
+					}
 				}
 			}
+		}
+	}
+
+	&__intro{
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+
+		&__illustration{
+			display:block;
+			max-width:100%;
+			width: 80%;
+			margin-top: 4em;
+		}
+
+		&__product-info{
+			color:$n-color1;
+			margin-top: 4em;
+			margin-bottom: 2em;
+			// background-image:url('../images/bg-curvy-mobile.svg#svgView(preserveAspectRatio(none))');
+			// background-repeat: no-repeat;
+			// background-position: center center;		
+
+			h1{
+				text-align: center;
+		    line-height: 1.4;
+		    font-size: 1.6rem;
+		    width: 93%;
+		    margin: 0 auto;
+		    margin-bottom: .8em;
+			}
+
+			p{
+				text-align: center;
+				line-height: 1.6;
+				font-size: 1rem;
+		    margin: 0 auto;
+		    width: 85%;
+
+			}
+
+		}
+		
+	}
+	
+	button{
+		color:$n-color1;
+		@include fw-bold;
+		border:none;
+		width: 270px;
+		padding: 1.1em 2em;
+		background:linear-gradient(to right, $a-color1, $a-color2);
+		border-radius: 2em;
+		font-size: 1.2em;
+
+		&:active{
+			transform: translateY(2px);
+		}
+		
+		&:hover{
+			cursor: pointer;
+
+			span{
+				 padding-right: 25px;
+
+				 &::after{
+				 	opacity: 1;
+  				right: 0;
+				 }
+			}
+		}
+
+		
+		span {
+	  display: inline-block;
+	  position: relative;
+	  transition: 0.5s;
+
+		  &::after{
+		  	content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+		  }
 		}
 	}
 }
