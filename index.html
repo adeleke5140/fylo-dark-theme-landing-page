@@ -9,60 +9,84 @@
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-	<header>
+	<header class="header">
 		<nav>
-			<img src="" alt="">
+			<img src="images/logo.svg" alt="icon that says hello">
 			<ul>
-				<li>Features</li>
-				<li>Team</li>
-				<li>Sign In</li>
+				<a href="#">
+					<li>Features</li>
+				</a>
+				<a href="#">
+					<li>Team</li>
+				</a>
+				<a href="#">
+					<li>Sign In</li>
+				</a>
 			</ul>
 		</nav>
 
-		<h1>All your files in one secure location, accessible anywhere.</h1>
-		<p>Fylo stores all your most important files in one secure location. Access them wherever 
-  	you need, share and collaborate with friends family, and co-workers.</p>
-		<button>Get Started</button>
+		<div class="header__intro">
+			<img src="images/illustration-intro.png" class= "header__intro__illustration" alt="an illustration icon that shows people putting files into a folder">
+
+			<div class="header__intro__product-info">
+				<h1>All your files in one secure location, accessible anywhere.</h1>
+				<p>Fylo stores all your most important files in one secure location. Access them wherever 
+		  	you need, share and collaborate with friends family, and co-workers.</p>
+
+		  	<!-- img src="images/bg-curvy-mobile.png" alt="a navy blue background image"> -->
+			</div>
+			
+			<button><span>Get Started</span></button>
+		</div>
 	</header>
 
-
-
-  
   <main>
-  	<section>
-  		<article>
+
+  	<section class="feature">
+
+  		<article class="feature__item1">
+  			<img src="images/icon-access-anywhere.svg" alt="" class="feature__icon">
   			<h2>Access your files, anywhere</h2>
   			<p>The ability to use a smartphone, tablet, or computer to access your account means your 
   				 files follow you everywhere.</p>
   		</article>
-  		<article>
+
+  		<article class="feature__item2">
+  			<img src="images/icon-security.svg" alt="" class="feature__icon">
   			<h2>Security you can trust</h2>
   			<p>2-factor authentication and user-controlled encryption are just a couple of the security 
   				features we allow to help secure your files.</p>
   		</article>
-  		<article>
+
+  		<article class="feature__item3" >
+  			<img src="images/icon-collaboration.svg" alt="" class="feature__icon">
   			<h2>Real-time collaboration</h2>
   			<p>Securely share files and folders with friends, family and colleagues for live collaboration. 
   				No email attachments required.</p>
   		</article>
-  		<article>
+
+  		<article class="feature__item4">
+  			<img src="images/icon-any-file.svg" alt="" class="feature__icon">
   			<h2>Store any type of file</h2>
   			<p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
   				 file types to be securely stored and shared.</p>
   		</article>
   	</section>
 
-  	<section>
-  		<img src="" alt="">
+  	<section class="product-info">
+  		<img src="images/illustration-stay-productive.png" alt="an icon of people holding files" class="product-info__img">
   		<h3>Stay productive, wherever you are</h3>
   		<p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
   				storage needs.</p>
   		<p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
   			 attachments required.</p>
-  		<span>See how Fylo works</span>
+  		<span>See how Fylo works
+  			<img src="images/icon-arrow.svg" alt="an arrow icon that points right" class="arrow-icon">
+  		</span>
   
   	</section>
 
