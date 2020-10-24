@@ -1,0 +1,82 @@
+main {
+	background:$p-color2;
+	padding-top: 5em;
+
+	.feature{
+		display: flex;
+		flex-direction: column;
+		text-align:center;
+		color: $n-color1;
+		font-family: $font-family2;
+
+		
+	}
+}
+
+.feature__icon{
+	margin-bottom: 1.5em;
+
+}
+
+//general styles for all the items in the first section
+[class*='feature__item']{
+	margin-bottom: 5em;
+
+	h2{
+		margin-bottom: .5em
+	}
+
+	p{
+		width: 80%;
+		margin: 0 auto;
+		line-height: 1.6;
+	}
+
+}
+
+.feature__item4 p{
+	width:85%;
+}
+
+//the product info section and how it works section
+
+.product-info{
+	color: $n-color1;
+	margin-bottom: 4em;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+
+
+	&__img{
+		max-width: 100%;
+		display: block;
+		width:80%;
+		margin-bottom: 3em;
+		margin-left: -4%;
+	}
+
+	h3{
+		margin-left: -10%;
+		margin-bottom: 1em;
+	}
+
+	p{
+		width: 85%;
+		margin-bottom: 5%
+	}
+
+	span{
+		margin-left: -45%;
+		color:$a-color1;
+		@include fw-normal;
+		border-bottom:$a-color1 solid 1px;
+		padding: 0 0 2px;
+
+		img{
+			position: relative;
+			top: 3px;
+			left: 2px;
+		}
+	}
+}
