@@ -1,0 +1,135 @@
+@media only screen and (min-width: 767px) {
+	.header {
+		nav {
+		padding-top: 3em;
+
+		ul a li{
+			margin-right: 4em;
+		}
+	}
+	&__intro{
+
+			&__illustration{
+				width: 50%;
+			}
+
+			&__product-info{
+				h1{
+					width: 50%;
+					font-size: 1.7rem;
+				}
+				p{
+					width: 46%;
+				}
+			}
+		}
+	}
+
+	main .feature{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 2em;
+		grid-row: 1fr;
+		padding: 4em 6em 0 6em;
+		margin-bottom: 4em;
+	}
+
+	.product-info{
+		flex-direction: row;
+		margin-bottom: 15em;
+
+		&__img{
+			width:40%;
+			margin: 0;
+			margin-left: 5%;
+		}
+
+		div > *{
+			margin:0;
+			margin-bottom: .5em;
+		}
+
+		div{
+			// margin-left: 5%;
+
+			h3 {
+				font-size: 1.8rem;
+				width: 50%;
+				line-height:1.5;
+			}
+
+			p{
+				margin-bottom: 3%;
+			}
+		}
+		
+	}
+
+	.testimonial{
+		flex-direction: row;
+		padding: 0 5em;
+
+
+		&__quotes{
+			height: 35px;
+			position: relative;
+			top: -10.4em;
+			left: 2.4em;
+		}
+
+		&__item{
+			margin-right: 5%;
+			box-shadow: none;
+
+			&:nth-child(2){
+				position:relative;
+			}
+			
+		}
+	}
+
+	.signUp{
+		width: 70%;
+		top:9em;
+
+		&__title{
+			font-size: 1.5rem;
+		}
+
+		&__details{
+			width:80%;
+		}
+
+		&__form{
+			display: flex;
+			margin-top: 3em;
+
+			input[type="text"]{
+			width: 500px;
+		}
+			input[type="submit"]{
+				margin-left: -5%;
+				width: 220px;
+			}
+
+		}
+	}
+
+	.footer__container{
+		display: flex;
+
+		> * {
+			margin-right: 9%;
+		}
+
+		.social-links{
+			display: flex;
+			justify-content: space-around;
+
+			a{
+				margin-right: 20%;
+			}
+		}
+	}
+
+}

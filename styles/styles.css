@@ -153,16 +153,17 @@ main .feature {
   margin-bottom: 3em;
   margin-left: -4%;
 }
+.product-info div {
+  padding-left: 7%;
+  padding-right: 6%;
+}
 .product-info h3 {
-  margin-left: -10%;
   margin-bottom: 1em;
 }
 .product-info p {
-  width: 85%;
   margin-bottom: 5%;
 }
 .product-info span {
-  margin-left: -46%;
   color: #65e2d9;
   font-weight: 400;
   border-bottom: #65e2d9 solid 1px;
@@ -332,6 +333,110 @@ address {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media only screen and (min-width: 767px) {
+  .header nav {
+    padding-top: 3em;
+  }
+  .header nav ul a li {
+    margin-right: 4em;
+  }
+  .header__intro__illustration {
+    width: 50%;
+  }
+  .header__intro__product-info h1 {
+    width: 50%;
+    font-size: 1.7rem;
+  }
+  .header__intro__product-info p {
+    width: 46%;
+  }
+
+  main .feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    grid-row: 1fr;
+    padding: 4em 6em 0 6em;
+    margin-bottom: 4em;
+  }
+
+  .product-info {
+    flex-direction: row;
+    margin-bottom: 15em;
+  }
+  .product-info__img {
+    width: 40%;
+    margin: 0;
+    margin-left: 5%;
+  }
+  .product-info div > * {
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+  .product-info div h3 {
+    font-size: 1.8rem;
+    width: 50%;
+    line-height: 1.5;
+  }
+  .product-info div p {
+    margin-bottom: 3%;
+  }
+
+  .testimonial {
+    flex-direction: row;
+    padding: 0 5em;
+  }
+  .testimonial__quotes {
+    height: 35px;
+    position: relative;
+    top: -10.4em;
+    left: 2.4em;
+  }
+  .testimonial__item {
+    margin-right: 5%;
+    box-shadow: none;
+  }
+  .testimonial__item:nth-child(2) {
+    position: relative;
+  }
+
+  .signUp {
+    width: 70%;
+    top: 9em;
+  }
+  .signUp__title {
+    font-size: 1.5rem;
+  }
+  .signUp__details {
+    width: 80%;
+  }
+  .signUp__form {
+    display: flex;
+    margin-top: 3em;
+  }
+  .signUp__form input[type=text] {
+    width: 500px;
+  }
+  .signUp__form input[type=submit] {
+    margin-left: -5%;
+    width: 220px;
+  }
+
+  .footer__container {
+    display: flex;
+  }
+  .footer__container > * {
+    margin-right: 9%;
+  }
+  .footer__container .social-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__container .social-links a {
+    margin-right: 20%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
