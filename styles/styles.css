@@ -409,6 +409,10 @@ address {
   border-radius: 50%;
 }
 
+.attribution__link {
+  color: white;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
