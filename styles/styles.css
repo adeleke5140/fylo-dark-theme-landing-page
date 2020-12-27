@@ -403,18 +403,14 @@ address {
   margin-bottom: 2em;
 }
 
-.social-links a {
-  color: white;
-}
-
-.social-links .ft-icon {
+.social-links .social-icon {
   margin-right: 5%;
   border: 1px solid white;
   padding: .5rem;
   border-radius: 50%;
 }
 
-.social-links .ft-icon:hover {
+.social-links .social-icon:hover {
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
   background: linear-gradient(to right, #65e2d9, #339ecc);
   color: #330;
