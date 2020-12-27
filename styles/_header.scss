@@ -23,14 +23,14 @@ body{
 				li{
 					display: inline-block;
 					margin-right:1em;
-
-					&:hover{
-						color: $a-color1;
-					}
 				
 					a{
 						text-decoration: none;
 						color:$n-color1;
+
+						&:hover{
+							color: $a-color1;
+						}
 					}
 			}
 		}

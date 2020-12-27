@@ -43,13 +43,13 @@ body {
   margin-right: 1em;
 }
 
-.header nav ul li:hover {
-  color: #65e2d9;
-}
-
 .header nav ul li a {
   text-decoration: none;
   color: white;
+}
+
+.header nav ul li a:hover {
+  color: #65e2d9;
 }
 
 .header__intro {
@@ -433,7 +433,7 @@ address {
   .header nav {
     padding-top: 3em;
   }
-  .header nav ul a li {
+  .header nav ul li {
     margin-right: 4em;
   }
   .header__intro__illustration {
