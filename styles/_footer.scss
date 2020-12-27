@@ -53,11 +53,6 @@ address {
 		margin-right: 5%;
 		padding:.5rem;
 		border-radius: 50%;
-
-		&:hover{
-			background:linear-gradient(to right, $a-color1, $a-color2);
-			color: #330;
-		}
 	}
 }
 

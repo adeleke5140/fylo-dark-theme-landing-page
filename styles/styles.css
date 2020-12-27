@@ -409,12 +409,6 @@ address {
   border-radius: 50%;
 }
 
-.social-links .social-icon:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
-  background: linear-gradient(to right, #65e2d9, #339ecc);
-  color: #330;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
