@@ -409,7 +409,7 @@ address {
   border-radius: 50%;
 }
 
-a.attribution__link {
+.attribution a.attribution__link {
   color: white;
 }
 
