@@ -6,6 +6,10 @@
 }
 
 /*typography*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
