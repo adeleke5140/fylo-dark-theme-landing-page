@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/f1edc9cc6f.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
@@ -51,28 +52,28 @@
 
   	<section class="feature" id="features">
 
-  		<article class="feature__item1">
+  		<article class="feature__item1" data-aos="fade-right">
   			<img src="images/icon-access-anywhere.svg" alt="a green icon of a desktop pc next to a mobile phone" class="feature__icon">
   			<h2>Access your files, anywhere</h2>
   			<p>The ability to use a smartphone, tablet, or computer to access your account means your 
   				 files follow you everywhere.</p>
   		</article>
 
-  		<article class="feature__item2">
+  		<article class="feature__item2" data-aos="fade-left">
   			<img src="images/icon-security.svg" alt="a green icon of a shield with a check mark within it" class="feature__icon">
   			<h2>Security you can trust</h2>
   			<p>2-factor authentication and user-controlled encryption are just a couple of the security 
   				features we allow to help secure your files.</p>
   		</article>
 
-  		<article class="feature__item3" >
+  		<article class="feature__item3" data-aos="fade-right">
   			<img src="images/icon-collaboration.svg" alt="" class="feature__icon">
   			<h2>Real-time collaboration</h2>
   			<p>Securely share files and folders with friends, family and colleagues for live collaboration. 
   				No email attachments required.</p>
   		</article>
 
-  		<article class="feature__item4">
+  		<article class="feature__item4" data-aos="fade-left">
   			<img src="images/icon-any-file.svg" alt="a green icon of a clock with three people standing next to it" class="feature__icon">
   			<h2>Store any type of file</h2>
   			<p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
@@ -81,9 +82,9 @@
   	</section>
 
   	<section class="product-info">
-  		<img src="images/illustration-stay-productive.png" alt="an icon of people holding files" class="product-info__img">
+  		<img src="images/illustration-stay-productive.png" alt="an icon of people holding files" class="product-info__img" data-aos="fade-right">
 
-  		<div>
+  		<div data-aos="fade-left">
   		<h3>Stay productive, wherever you are</h3>
   		<p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
   				storage needs.</p>
@@ -98,7 +99,7 @@
 	 <section class="testimonial" id="team">
 	 		<span><img src="images/bg-quotes.png" alt="a double quotes icon" class="testimonial__quotes"></span>
 
-		 	<div class = "testimonial__item">
+		 	<div class = "testimonial__item" data-aos="slide-up">
 		 		<p>
 		 			Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
 			  	become a well-oiled collaboration machine.
@@ -114,7 +115,7 @@
 			  
 		 	</div>
 
-		 	<div class="testimonial__item">
+		 	<div class="testimonial__item" data-aos="slide-up">
 		 		<p>
 		 			Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
 			  	become a well-oiled collaboration machine.
@@ -130,7 +131,7 @@
 
 			</div>
 
-	 		<div  class = "testimonial__item">
+	 		<div  class = "testimonial__item" data-aos="slide-up">
 	 			<p>
 	 				Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
 	  			become a well-oiled collaboration machine.
@@ -213,5 +214,11 @@
       Coded by adeleke5140
     </p>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+		duration:1200
+	});
+  </script>
 </body>
 </html>
